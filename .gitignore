@@ -1,0 +1,15 @@
+.vscode
+
+esp32_inference/build
+esp32_inference/components/esp32-camera
+
+
+esp32_data_collection/build
+esp32_data_collection/components/esp32-camera
+esp32_data_collection/components/I2Cbus
+esp32_data_collection/components/MPUdriver
+
+data
+pothole_model/data
+pothole_model/models
+**/__pycache__

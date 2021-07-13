@@ -1,0 +1,24 @@
+#=============================================
+# DATA PREPROCESSING
+#=============================================
+raw_data_dir: ./data/raw_data/
+converted_images_dir: ./data/converted_images/
+train_data_dir: ./data/train_data
+test_split: 0.1 # fraction of all data 
+validation_split: 0.1 # fraction of training data before augmentation
+augment_train_data: True
+augment_test_data: False
+augment_val_data: False
+
+#=============================================
+# MODEL/TRAINING
+#=============================================
+batch_size: 20
+epochs: 10
+initial_learning_rate: 0.01
+final_learning_rate: 0.001
+alpha: 0.1
+dropout_rate: 0.001
+classes: 2
+model_save_path: './models/pothole'
+tflite_model_path: './models/pothole/pothole.tflite'
